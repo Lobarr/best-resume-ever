@@ -44,6 +44,14 @@
               <div v-if="person.contact.github" class="contact-row">
                   <a :href="contactLinks.github">{{contactLinks.github}}</a>
               </div>
+              <div class="contact-row dots">
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+              </div>
+              <div class="contact-row">
+                  <a :href="person.contact.website">{{person.contact.website}}</a>
+              </div>
           </div>
           <div class="education">
               <h3>{{ lang.education }}</h3>
@@ -215,7 +223,7 @@ export default Vue.component(name, getVueOptions(name));
       }
     }
     .skills-block {
-      margin-top:50px;
+      margin-top:20px;
       position:relative;
       .skills {
         margin-bottom:10px;
