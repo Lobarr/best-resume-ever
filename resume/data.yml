@@ -1,13 +1,13 @@
 /* #*/ export const PERSON = `
 name:
   first: Jesuloba
-  middle:
   last: Egunjobi
 about: Hi, my name is John Doe. I"m just about the most boring type of person you could
        possibly imagine. I like collecting leaves from the tree in my back yard and documenting
        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
 position: Software Developer
 
+summary: Detail oriented professional with experience in Fullstack Web Applications, Web Crawlers, REST APIs, Blockchain Applications and Machine Learning.
 birth:
   year: 2000
   location: Toronto
@@ -15,12 +15,12 @@ birth:
 experience:
 - company: IBM
   position: Full Stack Developer Intern
-  timeperiod: May 2019 - August 2019
+  timeperiod: May 2019 - Present
   description:
-    - Integrated smoke tests using cypress into the build pipeline to reduce undetected bugs
-    - Improved quality and thorougness of unit tests to reduce CI build time 
-    - Implemented react adaptor to natively render React and jQuery 
-    - Utilized - Node.js, Jest, jQuery, SASS
+    - Integrated smoke tests into the build pipeline reducing undected bugs
+    - Decoupled monolithic testing architecture leading to quicker and stabilized build process
+    - Developed react adaptor to natively render React and jQuery into existing UI architecture
+    - Utilized - Node.js, React, jQuery, Docker, Cypress, Jest
 
 - company: Canada Consult Portal
   position: Software Developer
@@ -29,14 +29,14 @@ experience:
     - Improved consultant’s workflow by developing web crawler that discovers immigration forms on the Canadian immigration website
     - Integrated cloud storage providers for consultants to improve file sharing to clients
     - Improved communication between consultants and clients by integrating built-in email using IMAP
-    -	Utilized - Node.js, React, C#
+    -	Utilized - Node.js, React, C#, ChartJS
 
 - company: Ciderworks
   position: Software Developer
   timeperiod: July 2017 - December 2017
   description:
     - Improved administrative efficiency by developing admin dashboard to automate routine tasks and visualize insights
-    - Improved code coverage by 15% by performing quality assurance tasks and writing unit and integration tests
+    - Improved code coverage by performing QA leading to improved and thorough unit and integration tests
     - Utilized - Node.js, React, Express.js
 
 education:
@@ -46,8 +46,8 @@ education:
 
 # skill level goes 0 to 100
 skills:
-  - Proficient in programming languages -   Node.js, Go, Python, C++ (familiar)
-  - Working knowledge in technologies - React, Express.js, Flask, Pandas, Scikit Learn, Numpy, Docker, GraphQL, AWS
+  - Proficient in programming languages -   Node.js, Go, Python, C++, Typescript
+  - Working knowledge in technologies - React, Express.js, Flask, Pandas, Scikit Learn, Numpy, Docker, GraphQL, AWS, Cypress
   -	Competent in databases - MongoDB, Redis, SQL, DynamoDB
   -	Ability to work in teams made up of various people and collaborate effectively
   - Strong critical thinking and problem solving skills 

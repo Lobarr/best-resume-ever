@@ -14,40 +14,25 @@
                   <div class="img"></div>
               </div>
           </div>
+          <div class="summary">
+            <h3>{{lang.summary}}</h3>
+            <div class="summary-description">
+              {{person.summary}}
+            </div>
+          </div>
           <div class="contact">
               <h3>{{ lang.contact }}</h3>
               <div class="contact-row">
                   <a :href="contactLinks.email">{{person.contact.email}}</a>
               </div>
-              <div class="contact-row dots">
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-              </div>
               <div class="contact-row">
                   <a :href="contactLinks.phone">{{person.contact.phone}}</a>
               </div>
-              <div class="contact-row dots">
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-              </div>
               <div class="contact-row">
-                  <!-- {{person.contact.street}} <br>  -->
                   {{person.contact.city}}
-              </div>
-              <div v-if="person.contact.github" class="contact-row dots">
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
               </div>
               <div v-if="person.contact.github" class="contact-row">
                   <a :href="contactLinks.github">{{contactLinks.github}}</a>
-              </div>
-              <div class="contact-row dots">
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
-                  <i class="fa fa-circle" aria-hidden="true"></i>
               </div>
               <div class="contact-row">
                   <a :href="person.contact.website">{{person.contact.website}}</a>
@@ -93,9 +78,6 @@
           <div class="skills-block">
               <h3>{{ lang.skills }}</h3>
               <div class="skills">
-                      <!-- <div class="skill" v-for="skill in person.skills" :key="skill.name">
-                          <span class="skill-name">{{skill.name}}</span>
-                      </div> -->
                   <ul>
                     <li v-for="(skill, index) in person.skills" :key="index">
                       {{skill}}
@@ -132,11 +114,12 @@ export default Vue.component(name, getVueOptions(name));
     margin-top:0;
     letter-spacing:5px;
     font-weight:400;
+    font-size: 0.8em;
   }
   .top-row {
     width:100%;
-    padding-top:40px;
-    padding-bottom:40px;
+    padding-top:10px;
+    padding-bottom:20px;
     span {
       width:100%;
       display:block;
@@ -171,34 +154,35 @@ export default Vue.component(name, getVueOptions(name));
         width:100%;
       }
     }
-    .contact h3 {
-      text-align:center;
-      margin-top:20px;
+    .summary {
+      margin-top:10px;
+      margin-bottom:20px;
     }
-    .contact .contact-row {
-      text-align:center;
-      letter-spacing:2px;
-      margin-bottom:3px;
-      a {
-        color:black;
+    .contact {
+      display: inline-block;
+      h3 {
+        text-align:left;
+        margin-top:5px;
+      }
+      .contact-row {
+        font-size: 0.9em;
+        text-align:left;
+        letter-spacing:2px;
+        margin-bottom:1px;
+        a {
+          color:black;
+        }
       }
     }
-    .contact .contact-row:first-of-type {
-      margin-top:50px;
-    }
-    .contact .contact-row.dots {
-      margin-top:20px;
-      margin-bottom:15px;
-      font-size:10px;
-      color:rgba(153,153,153,0.6);
-    }
     .education {
-      margin-top:50px;
+      margin-top:30px;
+      h3 {
+        text-align: left;
+      }
       .education-block {
         margin-bottom:10px;
         .degree {
           font-size:19px;
-          text-transform:uppercase;
           margin-bottom:3px;
         }
       }
@@ -225,8 +209,10 @@ export default Vue.component(name, getVueOptions(name));
     .skills-block {
       margin-top:20px;
       position:relative;
+      h3 {
+        margin-bottom: 0;
+      }
       .skills {
-        margin-bottom:10px;
         margin-bottom:10px;
         position:relative;
         margin-left:auto;
