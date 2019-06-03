@@ -17,7 +17,7 @@ experience:
   position: Full Stack Developer Intern
   timeperiod: May 2019 - Present
   description:
-    - Integrated smoke tests into the build pipeline reducing undected bugs
+    - Integrated smoke tests into the build pipeline reducing undetected bugs
     - Decoupled monolithic testing architecture leading to quicker and stabilized build process
     - Developed react adaptor to natively render React and jQuery into existing UI architecture
     - Utilized - Node.js, React, jQuery, Docker, Cypress, Jest
