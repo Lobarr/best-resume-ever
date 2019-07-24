@@ -184,13 +184,7 @@ export default Vue.component(name, getVueOptions(name));
       }
       .education-block {
         margin-bottom:10px;
-        .degree {
-          font-size:13px;
-          margin-bottom:3px;
-        }
-        .degree-description {
-          font-size: 13px;
-        }
+        font-size:13px;
       }
     }
     .skills-block {
@@ -220,17 +214,22 @@ export default Vue.component(name, getVueOptions(name));
     .experience-block {
       margin-bottom:10px;
       .row:first-child {
-        margin-bottom:3px;
+        margin-bottom:1.5px;
       }
-      .row .company {
-        text-transform:uppercase;
-        font-size:14px;
-      }
-      .row .job-title {
-        font-size:14px;
-      }
-      .row .job-description {
-        font-size: 13px
+      .row {
+        .company {
+          text-transform:uppercase;
+          font-size:14px;
+        }
+        .job-description {
+          font-size: 13px
+        }
+        .job-title {
+          font-size:14px;
+        }
+        .time-period {
+          font-size: 12px;
+        }
       }
     }
   }
