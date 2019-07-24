@@ -32,10 +32,13 @@
                   {{person.contact.city}}
               </div>
               <div v-if="person.contact.github" class="contact-row">
-                  <a :href="contactLinks.github">{{contactLinks.github}}</a>
+                  <span :href="person.contact.github">{{person.contact.github}}</span>
               </div>
               <div class="contact-row">
-                  <a :href="person.contact.website">{{person.contact.website}}</a>
+                <span :href="person.contact.linkedin">{{person.contact.linkedin}}</span>
+              </div>
+              <div class="contact-row">
+                  <span :href="person.contact.website">{{person.contact.website}}</span>
               </div>
           </div>
           <div class="education">
@@ -48,6 +51,17 @@
                           <span class="degree-description">{{education.description}}</span>
                       </div>
                   </div>
+          </div>
+          <div class="skills-block">
+              <h3>{{ lang.skills }}</h3>
+              <div class="skills">
+                <ul>
+                  <li class="skill" v-for="(skill, index) in person.skills" :key="index">
+                    {{skill}}
+                  </li>
+                </ul>
+              </div>
+              <!-- <span class="skills-other"> {{person.knowledge}} </span> -->
           </div>
       </div>
       <div class="right-col">
@@ -75,20 +89,7 @@
                       </div>
                   </div>
           </div>
-          <div class="skills-block">
-              <h3>{{ lang.skills }}</h3>
-              <div class="skills">
-                  <ul>
-                    <li v-for="(skill, index) in person.skills" :key="index">
-                      {{skill}}
-                    </li>
-                  </ul>
-              </div>
-              <!-- <span class="skills-other"> {{person.knowledge}} </span> -->
-          </div>
       </div>
-  </div>
-
   </div>
 </template>
 
@@ -118,8 +119,8 @@ export default Vue.component(name, getVueOptions(name));
   }
   .top-row {
     width:100%;
-    padding-top:10px;
-    padding-bottom:20px;
+    padding-top:40px;
+    padding-bottom:40px;
     span {
       width:100%;
       display:block;
@@ -128,7 +129,7 @@ export default Vue.component(name, getVueOptions(name));
     }
     span.person-name {
       text-transform:uppercase;
-      font-size:50px;
+      font-size:35px;
       letter-spacing:10px;
     }
     span.person-position {
@@ -157,6 +158,9 @@ export default Vue.component(name, getVueOptions(name));
     .summary {
       margin-top:10px;
       margin-bottom:20px;
+      .summary-description {
+        font-size: 13px;
+      }
     }
     .contact {
       display: inline-block;
@@ -165,10 +169,9 @@ export default Vue.component(name, getVueOptions(name));
         margin-top:5px;
       }
       .contact-row {
-        font-size: 0.9em;
+        font-size: 13px;
         text-align:left;
-        letter-spacing:2px;
-        margin-bottom:1px;
+        margin-bottom:2px;
         a {
           color:black;
         }
@@ -182,8 +185,29 @@ export default Vue.component(name, getVueOptions(name));
       .education-block {
         margin-bottom:10px;
         .degree {
-          font-size:19px;
+          font-size:13px;
           margin-bottom:3px;
+        }
+        .degree-description {
+          font-size: 13px;
+        }
+      }
+    }
+    .skills-block {
+      margin-top:20px;
+      h3 {
+        margin-bottom: 2px;
+      }
+      .skills {
+        height: 100%;
+        margin-bottom:10px;
+        display:inline-block;
+        font-size:12px;
+        ul {
+          padding: 0;
+        }
+        .skill {
+          margin-bottom: 1px;
         }
       }
     }
@@ -200,46 +224,13 @@ export default Vue.component(name, getVueOptions(name));
       }
       .row .company {
         text-transform:uppercase;
-        font-size:19px;
+        font-size:14px;
       }
       .row .job-title {
-        font-size:19px;
+        font-size:14px;
       }
-    }
-    .skills-block {
-      margin-top:20px;
-      position:relative;
-      h3 {
-        margin-bottom: 0;
-      }
-      .skills {
-        margin-bottom:10px;
-        position:relative;
-        margin-left:auto;
-        margin-right:auto;
-        display:inline-block;
-        .skill {
-          width:80px;
-          height:80px;
-          border-radius:50%;
-          position:relative;
-          border:#333333 1px solid;
-          margin:3px;
-          float:left;
-          font-size:13px;
-          .skill-name {
-            text-align:center;
-            position:absolute;
-            top:50%;
-            transform:translateY(-50%);
-            width:100%;
-          }
-        }
-        .skills-other {
-          display:inline-block;
-          width:100%;
-          margin-top:20px;
-        }
+      .row .job-description {
+        font-size: 13px
       }
     }
   }

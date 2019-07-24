@@ -20,7 +20,10 @@ experience:
     - Integrated smoke tests into the build pipeline reducing undetected bugs
     - Decoupled monolithic testing architecture leading to quicker and stabilized build process
     - Developed react adaptor to natively render React and jQuery into existing UI architecture
-    - Utilized - Node.js, React, jQuery, Docker, Cypress, Jest
+    - Participated in architectural decisions of internal framework to meet business requirements
+    - Lead team of 6 intern developers and designer to develop proposed MVP in internal interns hackathon
+    - Designed and architected secure API gateway as a service solution for interns hackathon 
+    - Utilized - Node.js, React, jQuery, Docker, Cypress, Jest, Python, Redis, MongoDB
 
 - company: Canada Consult Portal
   position: Software Developer
@@ -29,7 +32,21 @@ experience:
     - Improved consultant’s workflow by developing web crawler that discovers immigration forms on the Canadian immigration website
     - Integrated cloud storage providers for consultants to improve file sharing to clients
     - Improved communication between consultants and clients by integrating built-in email using IMAP
+    - Designed and developed insights dashboard for consultants leading to improved workflow 
     -	Utilized - Node.js, React, C#, ChartJS
+
+- company: Adelytics 
+  position: Software Developer
+  timeperiod: June 2018 - Aug 2018
+  description:
+    - Designed and architected backend for social media management platform
+    - Dockerized application to improve ease of development and deployment
+    - Developed scripts to deploy application to staging environments
+    - Integrated job queue to process and speed up handling routine tasks 
+    - Integrated role based token authentication into system
+    - Developed scalable real-time messaging system to improved communication on the platform  
+    - Setup CI/CD pipeline to automate development workflow 
+    - Utilized - Typescript, AWS, DynamoDB, Redis, JWT, SocketIO, GraphQL
 
 - company: Ciderworks
   position: Software Developer
@@ -75,10 +92,10 @@ contributions:
 contact:
   email: jesulobaegunjobi@hotmail.com
   phone: (613) 413 9170
-  # street: Toronto
   city: Toronto, ON
-  website: https://lobarr.github.io
-  github: lobarr
+  website: lobarr.github.io
+  github: github.com/lobarr
+  linkedin: linkedin.com/in/jesuloba
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `
