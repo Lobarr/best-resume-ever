@@ -15,7 +15,7 @@ birth:
 experience:
 - company: IBM
   position: Full Stack Developer Intern
-  timeperiod: May 2019 - Present
+  timeperiod: May 2019 - Aug 2019
   description:
     - Integrated smoke tests into the build pipeline reducing undetected bugs
     - Decoupled monolithic testing architecture leading to quicker and stabilized build process
@@ -63,7 +63,7 @@ education:
 
 # skill level goes 0 to 100
 skills:
-  - Proficient in programming languages -   Node.js, Go, Python, C++, Typescript
+  - Proficient in programming languages -   Go, Python, C++, JavaScript, TypeScript
   - Working knowledge in technologies - React, Express.js, Flask, Pandas, Scikit Learn, Numpy, Docker, GraphQL, AWS, Cypress
   -	Competent in databases - MongoDB, Redis, SQL, DynamoDB
   -	Ability to work in teams made up of various people and collaborate effectively

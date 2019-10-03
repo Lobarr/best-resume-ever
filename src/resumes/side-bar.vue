@@ -50,6 +50,9 @@
                       <div class="row">
                           <span class="degree-description">{{education.description}}</span>
                       </div>
+                      <div class="row">
+                          <span class="degree-description">{{education.timeperiod}}</span>
+                      </div>
                   </div>
           </div>
           <div class="skills-block">
@@ -219,6 +222,7 @@ export default Vue.component(name, getVueOptions(name));
       .row {
         .company {
           text-transform:uppercase;
+          font-weight: 550;
           font-size:14px;
         }
         .job-description {
