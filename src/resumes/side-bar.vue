@@ -122,8 +122,8 @@ export default Vue.component(name, getVueOptions(name));
   }
   .top-row {
     width:100%;
-    padding-top:40px;
-    padding-bottom:40px;
+    padding-top:30px;
+    padding-bottom:30px;
     span {
       width:100%;
       display:block;

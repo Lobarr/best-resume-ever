@@ -7,7 +7,7 @@ about: Hi, my name is John Doe. I"m just about the most boring type of person yo
        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
 position: Software Developer
 
-summary: Detail oriented professional with experience in Fullstack Web Applications, Web Crawlers, REST APIs, Blockchain Applications and Machine Learning.
+summary: Detail oriented professional with experience in Fullstack Web Applications, Web Crawlers, Rest/GraphQL APIs, Blockchain Applications and Machine Learning.
 birth:
   year: 2000
   location: Toronto
@@ -23,7 +23,7 @@ experience:
     - Participated in architectural decisions of internal framework to meet business requirements
     - Lead team of 6 intern developers and designer to develop proposed MVP in internal interns hackathon
     - Designed and architected secure API gateway as a service solution for interns hackathon 
-    - Utilized - Node.js, React, jQuery, Docker, Cypress, Jest, Python, Redis, MongoDB
+    - Utilized - JavaScript, Node.js, React, jQuery, Docker, Cypress, Jest, Python, Redis, MongoDB
 
 - company: Canada Consult Portal
   position: Software Developer
@@ -33,7 +33,7 @@ experience:
     - Integrated cloud storage providers for consultants to improve file sharing to clients
     - Improved communication between consultants and clients by integrating built-in email using IMAP
     - Designed and developed insights dashboard for consultants leading to improved workflow 
-    -	Utilized - Node.js, React, C#, ChartJS
+    -	Utilized - JavaScript, Node.js, React, C#, ChartJS
 
 - company: Adelytics 
   position: Software Developer
@@ -63,9 +63,10 @@ education:
 
 # skill level goes 0 to 100
 skills:
-  - Proficient in programming languages -   Go, Python, C++, JavaScript, TypeScript
-  - Working knowledge in technologies - React, Express.js, Flask, Pandas, Scikit Learn, Numpy, Docker, GraphQL, AWS, Cypress
-  -	Competent in databases - MongoDB, Redis, SQL, DynamoDB
+  - Proficient in programming languages -   Go, Python, C++, Java, JavaScript, TypeScript, Solidity
+  - Working knowledge in technologies - React, MobX/Redux, Vue, Express.js, Flask, Docker, GraphQL, Cypress, Git, Bash, RPC, Pub/Sub, WebSockets, Crytography
+  -	Experience in Linux, Windows and Mac environments.
+  - Competent in databases - MongoDB, Redis, SQL, DynamoDB
   -	Ability to work in teams made up of various people and collaborate effectively
   - Strong critical thinking and problem solving skills 
 
