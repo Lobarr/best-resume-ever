@@ -9,11 +9,11 @@
           </span>
       </div>
       <div class="left-col">
-          <div class="person-image">
+          <!-- <div class="person-image">
               <div class="image-centerer">
                   <div class="img"></div>
               </div>
-          </div>
+          </div> -->
           <div class="summary">
             <h3>{{lang.summary}}</h3>
             <div class="summary-description">
