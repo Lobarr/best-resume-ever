@@ -7,7 +7,7 @@ about: Hi, my name is John Doe. I"m just about the most boring type of person yo
        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
 position: Software Developer
 
-summary: Detail oriented professional with experience in Fullstack Web Applications, Web Crawlers, Rest/GraphQL APIs, Blockchain Applications and Machine Learning.
+summary: Detail oriented professional with experience in Fullstack Web Applications, Web Crawlers, Rest/GraphQL APIs, Blockchain Applications, Distributed Applications/Systems and Machine Learning.
 birth:
   year: 2000
   location: Toronto
@@ -35,7 +35,7 @@ experience:
     - Designed and developed insights dashboard for consultants leading to improved workflow 
     -	Utilized - JavaScript, Node.js, React, C#, ChartJS
 
-- company: Adelytics 
+- company: Adelytics  
   position: Software Developer
   timeperiod: June 2018 - Aug 2018
   description:
@@ -63,13 +63,16 @@ education:
 
 # skill level goes 0 to 100
 skills:
-  - Programming Languages - Go, Python, C++, Java, JavaScript, TypeScript, Solidity
-  - Frameworks, Libararies and Technologies - HTML/CSS, React, MobX/Redux, Vue, Jest, Enzyme, Express.js, Flask, Docker, GraphQL, Cypress, Git, Bash, RPC, Pub/Sub, WebSockets, Crytography
+  - Programming Languages - Go, Python, C++, Java, JavaScript, TypeScript, Bash
+  - Frameworks/Libararies - HTML/CSS/SASS, React, MobX/Redux, Vue, Flask, Express, Webpack
+  - Tools/Platforms - Docker, Kubernetes, Github Action, REST/GraphQL, Cypress, Git, RPC, JWT, Websockets, 
   -	Operating Systems - Linux, Windows and Mac OS
-  - Databases - MongoDB, Redis, SQL, DynamoDB
+  - Databases - MongoDB, Redis, SQLite, DynamoDB
+  - Cloud Providers - AWS, Heroku
+  - Others - Networking and Security, Containerization, Virtualization, Crytography, Unit/Integration Testing, CI/CD, Message Brokers
   -	Ability to work in teams made up of various people and collaborate effectively
   - Strong critical thinking and problem solving skills 
-
+                                                            
 projects:
 - name: best-resume-ever
   platform: Vue
