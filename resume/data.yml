@@ -46,7 +46,7 @@ experience:
     - Integrated role based token authentication into system
     - Developed scalable real-time messaging system to improved communication on the platform  
     - Set up CI/CD pipeline to automate development workflow 
-    - Utilized - Typescript, AWS, DynamoDB, Redis, JWT, SocketIO, GraphQL
+    - Utilized - Typescript, Docker, AWS, DynamoDB, Redis, JWT, SocketIO, GraphQL
 
 - company: Ciderworks
   position: Software Developer
@@ -69,7 +69,7 @@ skills:
   -	Operating Systems - Linux, Windows and Mac OS
   - Databases - MongoDB, Redis, SQLite, DynamoDB
   - Cloud Providers - AWS, Heroku
-  - Others - Networking and Security, Containerization, Virtualization, Crytography, Unit/Integration Testing, CI/CD, Message Brokers
+  - Others - Networking and Security, Agile Development Principles, Containerization, Virtualization, Cloud Native Applications, Crytography, Unit/Integration Testing, CI/CD, Message Brokers
   -	Ability to work in teams made up of various people and collaborate effectively
   - Strong critical thinking and problem solving skills 
                                                             
