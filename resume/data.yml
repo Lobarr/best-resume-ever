@@ -65,7 +65,7 @@ education:
 skills:
   - Programming Languages - Go, Python, C++, Java, JavaScript, TypeScript, Bash
   - Frameworks/Libararies - HTML/CSS/SASS, React, MobX/Redux, Vue, Flask, Express, Webpack
-  - Tools/Platforms - Docker, Kubernetes, Helm, Github Action, REST/GraphQL, Cypress, Git, RPC, JWT, Websockets, 
+  - Tools/Platforms - Docker, Kubernetes, Helm, Github Action, REST/GRPC/GraphQL, Bazel, Git, JWT, Websockets
   -	Operating Systems - Linux, Windows and Mac OS
   - Databases - MongoDB, Redis, SQLite, DynamoDB
   - Cloud Providers - AWS, Heroku
