@@ -44,7 +44,7 @@ experience:
     - Developed scripts to deploy application to staging environments
     - Integrated job queue to process and speed up handling routine tasks 
     - Integrated role based token authentication into system
-    - Developed scalable real-time messaging system to improved communication on the platform  
+    - Developed scalable real-time messaging system leading to improved communication on the platform  
     - Set up CI/CD pipeline to automate development workflow 
     - Utilized - Typescript, Docker, AWS, DynamoDB, Redis, JWT, SocketIO, GraphQL
 
@@ -65,7 +65,7 @@ education:
 skills:
   - Programming Languages - Go, Python, C++, Java, JavaScript, TypeScript, Bash
   - Frameworks/Libararies - HTML/CSS/SASS, React, MobX/Redux, Vue, Flask, Express, Webpack
-  - Tools/Platforms - Docker, Kubernetes, Helm, Github Action, REST/GRPC/GraphQL, Bazel, Git, JWT, Websockets
+  - Tools/Platforms - Docker, Kubernetes, Helm, Github Action, REST/GRPC/GraphQL, Protobuf/MsgPack/JSON, Bazel, Git, JWT, Websockets
   -	Operating Systems - Linux, Windows and Mac OS
   - Databases - MongoDB, Redis, SQLite, DynamoDB
   - Cloud Providers - AWS, Heroku
