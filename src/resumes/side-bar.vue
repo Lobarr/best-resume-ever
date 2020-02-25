@@ -70,27 +70,53 @@
       <div class="right-col">
           <div class="experience">
               <h3>{{ lang.experience }}</h3>
-                  <div class="experience-block" v-for="experience in person.experience" :key="experience.company">
-                      <div class="row">
-                          <span class="company"> {{experience.company}} -</span>
-                          <span class="job-title"> {{experience.position}} </span>
-                      </div>
-                      <div class="row">
-                          <span class="time-period"> {{experience.timeperiod}}</span>
-                      </div>
-                      <div class="row">
-                          <span class="job-description" v-if="Array.isArray(experience.description)"> 
-                            <ul>
-                              <li v-for="(description, index) in experience.description" :key="index">
-                                {{description}}
-                              </li>
-                            </ul>
-                          </span>
-                          <span class="job-description" v-else>
-                            {{experience.description}}
-                          </span>
-                      </div>
+              <div class="experience-block" v-for="experience in person.experience" :key="experience.company">
+                  <div class="row">
+                      <span class="company"> {{experience.company}} -</span>
+                      <span class="job-title"> {{experience.position}} </span>
                   </div>
+                  <div class="row timeperiod-location">
+                      <span> {{experience.timeperiod}}</span>
+                      <span> {{experience.location}}</span>
+                  </div>
+                  <div class="row">
+                      <span class="job-description" v-if="Array.isArray(experience.description)"> 
+                        <ul>
+                          <li v-for="(description, index) in experience.description" :key="index">
+                            {{description}}
+                          </li>
+                        </ul>
+                      </span>
+                      <span class="job-description" v-else>
+                        {{experience.description}}
+                      </span>
+                  </div>
+              </div>
+
+              <h3>{{ lang.projects }}</h3>
+              <div class="experience-block" v-for="project in person.projects" :key="project.name">
+                  <div class="row">
+                      <span class="company"> {{project.name}}</span>
+                  </div>
+                  <div class="row project-metadata">
+                    <span>{{project.bio}}</span>
+                  </div>
+                  <div class="row project-metadata">
+                      <span>{{project.url}}</span>
+                  </div>
+                  <div class="row">
+                      <span class="job-description" v-if="Array.isArray(project.description)"> 
+                        <ul>
+                          <li v-for="(description, index) in project.description" :key="index">
+                            {{description}}
+                          </li>
+                        </ul>
+                      </span>
+                      <span class="job-description" v-else>
+                        {{project.description}}
+                      </span>
+                  </div>
+              </div>
           </div>
       </div>
   </div>
@@ -122,8 +148,8 @@ export default Vue.component(name, getVueOptions(name));
   }
   .top-row {
     width:100%;
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top:15px;
+    padding-bottom:20px;
     span {
       width:100%;
       display:block;
@@ -132,7 +158,7 @@ export default Vue.component(name, getVueOptions(name));
     }
     span.person-name {
       text-transform:uppercase;
-      font-size:35px;
+      font-size:30px;
       letter-spacing:10px;
     }
     span.person-position {
@@ -162,7 +188,7 @@ export default Vue.component(name, getVueOptions(name));
       margin-top:10px;
       margin-bottom:20px;
       .summary-description {
-        font-size: 13px;
+        font-size: 11px;
       }
     }
     .contact {
@@ -172,7 +198,7 @@ export default Vue.component(name, getVueOptions(name));
         margin-top:5px;
       }
       .contact-row {
-        font-size: 13px;
+        font-size: 11px;
         text-align:left;
         margin-bottom:2px;
         a {
@@ -187,7 +213,7 @@ export default Vue.component(name, getVueOptions(name));
       }
       .education-block {
         margin-bottom:10px;
-        font-size:13px;
+        font-size:11px;
       }
     }
     .skills-block {
@@ -199,7 +225,7 @@ export default Vue.component(name, getVueOptions(name));
         height: 100%;
         margin-bottom:10px;
         display:inline-block;
-        font-size:12px;
+        font-size:11px;
         ul {
           padding: 0;
         }
@@ -215,7 +241,7 @@ export default Vue.component(name, getVueOptions(name));
     padding-left:4%;
     padding-right:8%;
     .experience-block {
-      margin-bottom:10px;
+      margin-bottom:15px;
       .row:first-child {
         margin-bottom:1.5px;
       }
@@ -223,17 +249,24 @@ export default Vue.component(name, getVueOptions(name));
         .company {
           text-transform:uppercase;
           font-weight: 550;
-          font-size:14px;
+          font-size:12px;
         }
         .job-description {
-          font-size: 13px
+          font-size: 10px
         }
         .job-title {
-          font-size:14px;
+          font-size:12px;
         }
-        .time-period {
-          font-size: 12px;
-        }
+      }
+
+      .timeperiod-location {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+      }
+
+      .project-metadata {
+        font-size: 10px;
       }
     }
   }

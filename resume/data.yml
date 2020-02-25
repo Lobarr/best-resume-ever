@@ -16,18 +16,18 @@ experience:
 - company: IBM
   position: Full Stack Developer Intern
   timeperiod: May 2019 - Aug 2019
+  location: Toronto, ON
   description:
-    - Integrated smoke tests into the build pipeline reducing undetected bugs
-    - Decoupled monolithic testing architecture leading to quicker and stabilized build process
-    - Developed react adaptor to natively render React and jQuery into existing UI architecture
+    - Integrated smoke tests into the build pipeline reducing undetected bugs 
     - Participated in architectural decisions of internal framework to meet business requirements
     - Led team of 6 intern developers and designer to develop proposed MVP in internal interns hackathon
     - Designed and architected secure API gateway as a service solution for interns hackathon 
     - Utilized - JavaScript, Node.js, React, jQuery, Docker, Cypress, Jest, Python, Redis, MongoDB
 
-- company: Canada Consult Portal
+- company: Caseasy
   position: Software Developer
   timeperiod: February 2018 - January 2019
+  location: Remote
   description: 
     - Improved consultant’s workflow by developing web crawler that discovers immigration forms on the Canadian immigration website
     - Integrated cloud storage providers for consultants to improve file sharing to clients
@@ -38,12 +38,10 @@ experience:
 - company: Adelytics  
   position: Software Developer
   timeperiod: June 2018 - Aug 2018
+  location: Remote
   description:
-    - Designed and architected backend for social media management platform
     - Dockerized application to improve ease of development and deployment
-    - Developed scripts to deploy application to staging environments
     - Integrated job queue to process and speed up handling routine tasks 
-    - Integrated role based token authentication into system
     - Developed scalable real-time messaging system leading to improved communication on the platform  
     - Set up CI/CD pipeline to automate development workflow 
     - Utilized - Typescript, Docker, AWS, DynamoDB, Redis, JWT, SocketIO, GraphQL
@@ -51,6 +49,7 @@ experience:
 - company: Ciderworks
   position: Software Developer
   timeperiod: July 2017 - December 2017
+  location: Remote
   description:
     - Improved administrative efficiency by developing admin dashboard to automate routine tasks and visualize insights
     - Improved code coverage by performing QA leading to improved and thorough unit and integration tests
@@ -74,10 +73,24 @@ skills:
   - Strong critical thinking and problem solving skills 
                                                             
 projects:
-- name: best-resume-ever
-  platform: Vue
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: Gizo
+  bio: Decentralized distributed job queue built using blockchain technology
+  description:
+    - Developed core blockchain system component using the POW consensus algorithm that allows blocks to be securely written/read using transactions stored in the mempool
+    - Integrated caching in the blockchain to decrase load on the blockchain and to improve performance of frequently executed jobs
+    - Developed system component that allows jobs to be executed in a secure fault tolerant manner which supports executing inidividual jobs, job to be executed in parralel, jobs to be chained to each other and jobs that trigger other jobs
+    - Developed system component in charge of orchestrating jobs to be executed on worker nodes
+    - Developed python sdk that allows submitting jobs and retriving information from the gizo network
+    - Utilized - Go, RPC, Python, BoltDB, WebSocket
+  url: github.com/Lobarr/gizo
+- name: Raven
+  bio: Distributed microservices API Gateway
+  description:
+    - Developed system component that supports circuit breaking, request caching, rate limiting, request validition and service failure alerts
+    - Integrated celery task queue to handle timely tasks reducing overhead and improving system performance
+    - Developed dashboard for visualizing insights of running services and hot service management
+    - Utilized - Python, Typescript, React, Mobx, Celery, Redis, MongoDB, SocketIO
+  url: github.com/Lobarr/raven
 
 hobbies:
 - name: Video Games
