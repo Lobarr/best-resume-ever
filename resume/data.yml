@@ -80,7 +80,7 @@ projects:
     - Integrated caching in the blockchain to decrase load on the blockchain and to improve performance of frequently executed jobs
     - Developed system component that allows jobs to be executed in a secure fault tolerant manner which supports executing inidividual jobs, job to be executed in parralel, jobs to be chained to each other and jobs that trigger other jobs
     - Developed system component in charge of orchestrating jobs to be executed on worker nodes
-    - Developed python sdk that allows submitting jobs and retriving information from the gizo network
+    - Developed python sdk that allows submitting jobs and retrieving information from the gizo network
     - Utilized - Go, RPC, Python, BoltDB, WebSocket
   url: github.com/Lobarr/gizo
 - name: Raven
