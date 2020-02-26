@@ -7,7 +7,7 @@ about: Hi, my name is John Doe. I"m just about the most boring type of person yo
        each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
 position: Software Developer
 
-summary: Detail oriented professional with experience in Fullstack Web Applications, Web Crawlers, Rest/GraphQL APIs, Blockchain Applications, Distributed Applications/Systems and Machine Learning.
+summary: Detail oriented professional with experience in Fullstack Web Applications, Web Crawlers, Rest/GraphQL APIs, Blockchain Applications, Distributed Applications/Systems and Machine Learning. Looking to work on Cloud Infrastructure / Distributed Systems
 birth:
   year: 2000
   location: Toronto
@@ -18,42 +18,42 @@ experience:
   timeperiod: May 2019 - Aug 2019
   location: Toronto, ON
   description:
-    - Integrated smoke tests into the build pipeline reducing undetected bugs 
-    - Participated in architectural decisions of internal framework to meet business requirements
+    - Utilized - JavaScript, Node.js, React, jQuery, Docker, Cypress, Jest, Python, Redis, MongoDB
+    - Reduced undetected bugs in the build pipeline by integrating smoke tests
+    - Met business requirments by participating in architectural decisions of internal framework
     - Led team of 6 intern developers and designer to develop proposed MVP in internal interns hackathon
     - Designed and architected secure API gateway as a service solution for interns hackathon 
-    - Utilized - JavaScript, Node.js, React, jQuery, Docker, Cypress, Jest, Python, Redis, MongoDB
 
 - company: Caseasy
   position: Software Developer
   timeperiod: February 2018 - January 2019
   location: Remote
-  description: 
-    - Improved consultant’s workflow by developing web crawler that discovers immigration forms on the Canadian immigration website
-    - Integrated cloud storage providers for consultants to improve file sharing to clients
-    - Improved communication between consultants and clients by integrating built-in email using IMAP
-    - Designed and developed insights dashboard for consultants leading to improved workflow 
+  description:
     -	Utilized - JavaScript, Node.js, React, C#, ChartJS
+    - Improved consultant’s workflow by developing web crawler that discovers immigration forms on the Canadian immigration website
+    - Improved file sharing between consultants and clients by integrating cloud storage providers
+    - Improved communication between consultants and clients by integrating built-in email using IMAP
+    - Improved consultants workflow by designing and developing insights dashboard
 
 - company: Adelytics  
   position: Software Developer
   timeperiod: June 2018 - Aug 2018
   location: Remote
   description:
-    - Dockerized application to improve ease of development and deployment
-    - Integrated job queue to process and speed up handling routine tasks 
-    - Developed scalable real-time messaging system leading to improved communication on the platform  
-    - Set up CI/CD pipeline to automate development workflow 
     - Utilized - Typescript, Docker, AWS, DynamoDB, Redis, JWT, SocketIO, GraphQL
+    - Improved ease of development and deployment by dockerizing application
+    - Sped up processing of routine tasks by integrating task queue
+    - Improved communication between influencer and marketers by developing scalable real-time messaging system 
+    - Automated development workflow by setting up CI/CD pipeline
 
 - company: Ciderworks
   position: Software Developer
   timeperiod: July 2017 - December 2017
   location: Remote
   description:
+    - Utilized - Node.js, React, Express.js
     - Improved administrative efficiency by developing admin dashboard to automate routine tasks and visualize insights
     - Improved code coverage by performing QA leading to improved and thorough unit and integration tests
-    - Utilized - Node.js, React, Express.js
 
 education:
 - degree: Bachelor of IT
@@ -63,33 +63,31 @@ education:
 # skill level goes 0 to 100
 skills:
   - Programming Languages - Go, Python, C++, Java, JavaScript, TypeScript, Bash
-  - Frameworks/Libararies - HTML/CSS/SASS, React, MobX/Redux, Vue, Flask, Express, Webpack
   - Tools/Platforms - Docker, Kubernetes, Helm, Github Action, REST/GRPC/GraphQL, Protobuf/MsgPack/JSON, Bazel, Git, JWT, Websockets
-  -	Operating Systems - Linux, Windows and Mac OS
-  - Databases - MongoDB, Redis, SQLite, DynamoDB
   - Cloud Providers - AWS, Heroku
+  - Databases - MongoDB, Redis, SQLite, DynamoDB
+  - Frameworks/Libararies - React, MobX/Redux, Vue, Flask, Express, Webpack
+  -	Operating Systems - Linux, Windows and Mac OS
   - Others - Networking and Security, Agile Development Principles, Containerization, Virtualization, Cloud Native Applications, Crytography, Unit/Integration Testing, CI/CD, Message Brokers
-  -	Ability to work in teams made up of various people and collaborate effectively
-  - Strong critical thinking and problem solving skills 
                                                             
 projects:
 - name: Gizo
   bio: Decentralized distributed job queue built using blockchain technology
   description:
+    - Utilized - Go, RPC, Python, BoltDB, WebSocket
     - Developed core blockchain system component using the POW consensus algorithm that allows blocks to be securely written/read using transactions stored in the mempool
     - Integrated caching in the blockchain to decrase load on the blockchain and to improve performance of frequently executed jobs
     - Developed system component that allows jobs to be executed in a secure fault tolerant manner which supports executing inidividual jobs, job to be executed in parralel, jobs to be chained to each other and jobs that trigger other jobs
     - Developed system component in charge of orchestrating jobs to be executed on worker nodes
-    - Developed python sdk that allows submitting jobs and retrieving information from the gizo network
-    - Utilized - Go, RPC, Python, BoltDB, WebSocket
   url: github.com/Lobarr/gizo
+
 - name: Raven
   bio: Distributed microservices API Gateway
   description:
+    - Utilized - Python, Typescript, React, Mobx, Celery, Redis, MongoDB, SocketIO
     - Developed system component that supports circuit breaking, request caching, rate limiting, request validition and service failure alerts
     - Integrated celery task queue to handle timely tasks reducing overhead and improving system performance
     - Developed dashboard for visualizing insights of running services and hot service management
-    - Utilized - Python, Typescript, React, Mobx, Celery, Redis, MongoDB, SocketIO
   url: github.com/Lobarr/raven
 
 hobbies:

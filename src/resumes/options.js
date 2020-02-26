@@ -7,12 +7,25 @@ import {
 } from '../terms';
 
 // Called by templates to decrease redundancy
+function parseSkill(skill) {
+    const parsedSkill = skill.split('-');
+    return {
+        title: parsedSkill[0],
+        skills: parsedSkill[1]
+    };
+}
+
 function getVueOptions (name) {
     const opt = {
         name: name,
         data () {
+            const person = yaml.load(PERSON);
             return {
-                person: yaml.load(PERSON),
+                person: Object.assign(
+                    {},
+                    person,
+                    { skills: person.skills.map(skill => parseSkill(skill)) }
+                ),
                 terms: terms,
             };
         },

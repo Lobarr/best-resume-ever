@@ -50,9 +50,9 @@
                       <div class="row">
                           <span class="degree-description">{{education.description}}</span>
                       </div>
-                      <div class="row">
+                      <!-- <div class="row">
                           <span class="degree-description">{{education.timeperiod}}</span>
-                      </div>
+                      </div> -->
                   </div>
           </div>
           <div class="skills-block">
@@ -60,7 +60,8 @@
               <div class="skills">
                 <ul>
                   <li class="skill" v-for="(skill, index) in person.skills" :key="index">
-                    {{skill}}
+                    <div class="skill-title">{{skill.title}}</div>
+                    <div>{{skill.skills}}</div>
                   </li>
                 </ul>
               </div>
@@ -83,7 +84,7 @@
                       <span class="job-description" v-if="Array.isArray(experience.description)"> 
                         <ul>
                           <li v-for="(description, index) in experience.description" :key="index">
-                            {{description}}
+                            <span>{{description}}</span>
                           </li>
                         </ul>
                       </span>
@@ -108,7 +109,7 @@
                       <span class="job-description" v-if="Array.isArray(project.description)"> 
                         <ul>
                           <li v-for="(description, index) in project.description" :key="index">
-                            {{description}}
+                            <span>{{description}}</span>
                           </li>
                         </ul>
                       </span>
@@ -142,8 +143,8 @@ export default Vue.component(name, getVueOptions(name));
     text-transform:uppercase;
     padding-top:0;
     margin-top:0;
-    letter-spacing:5px;
-    font-weight:400;
+    letter-spacing:2px;
+    font-weight:550;
     font-size: 0.8em;
   }
   .top-row {
@@ -158,7 +159,7 @@ export default Vue.component(name, getVueOptions(name));
     }
     span.person-name {
       text-transform:uppercase;
-      font-size:30px;
+      font-size:20px;
       letter-spacing:10px;
     }
     span.person-position {
@@ -185,10 +186,10 @@ export default Vue.component(name, getVueOptions(name));
       }
     }
     .summary {
-      margin-top:10px;
+      // margin-top:5px;
       margin-bottom:20px;
       .summary-description {
-        font-size: 11px;
+        font-size: 12px;
       }
     }
     .contact {
@@ -198,7 +199,7 @@ export default Vue.component(name, getVueOptions(name));
         margin-top:5px;
       }
       .contact-row {
-        font-size: 11px;
+        font-size: 12px;
         text-align:left;
         margin-bottom:2px;
         a {
@@ -230,7 +231,13 @@ export default Vue.component(name, getVueOptions(name));
           padding: 0;
         }
         .skill {
-          margin-bottom: 1px;
+          list-style-type: none;
+          margin-bottom: 10px;
+          .skill-title {
+            font-weight: 550;
+            // letter-spacing:2px;
+            text-transform: uppercase;
+          }
         }
       }
     }
@@ -252,21 +259,25 @@ export default Vue.component(name, getVueOptions(name));
           font-size:12px;
         }
         .job-description {
-          font-size: 10px
+          font-size: 10.5px;
+          li:first-of-type {
+            font-weight: 550;
+          }
         }
         .job-title {
           font-size:12px;
+          font-weight: 450;
         }
       }
 
       .timeperiod-location {
         display: flex;
         justify-content: space-between;
-        font-size: 10px;
+        font-size: 10.5px;
       }
 
       .project-metadata {
-        font-size: 10px;
+        font-size: 10.5px;
       }
     }
   }
