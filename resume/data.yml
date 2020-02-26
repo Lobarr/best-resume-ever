@@ -20,9 +20,9 @@ experience:
   description:
     - Utilized - JavaScript, Node.js, React, jQuery, Docker, Cypress, Jest, Python, Redis, MongoDB
     - Reduced undetected bugs in the build pipeline by integrating smoke tests
-    - Met business requirments by participating in architectural decisions of internal framework
+    - Met business requirements by participating in architectural decisions of internal framework
     - Led team of 6 intern developers and designer to develop proposed MVP in internal interns hackathon
-    - Designed and architected secure API gateway as a service solution for interns hackathon 
+    - Designed and architected a secure API gateway as a service solution for interns hackathon
 
 - company: Caseasy
   position: Software Developer
@@ -57,7 +57,7 @@ experience:
 
 education:
 - degree: Bachelor of IT
-  timeperiod: Septemper 2016 - July 2020
+  timeperiod: September 2016 - July 2020
   description: Major in Networking and IT Security, Ontario Tech University, Oshawa, Canada.
 
 # skill level goes 0 to 100
@@ -66,18 +66,18 @@ skills:
   - Tools/Platforms - Docker, Kubernetes, Helm, Github Action, REST/GRPC/GraphQL, Protobuf/MsgPack/JSON, Bazel, Git, JWT, Websockets
   - Cloud Providers - AWS, Heroku
   - Databases - MongoDB, Redis, SQLite, DynamoDB
-  - Frameworks/Libararies - React, MobX/Redux, Vue, Flask, Express, Webpack
+  - Frameworks/Libraries - React, MobX/Redux, Vue, Flask, Express, Webpack
   -	Operating Systems - Linux, Windows and Mac OS
-  - Others - Networking and Security, Agile Development Principles, Containerization, Virtualization, Cloud Native Applications, Crytography, Unit/Integration Testing, CI/CD, Message Brokers
-                                                            
+  - Others - Networking and Security, Agile Development Principles, Containerization, Virtualization, Cloud Native Applications, Cryptography, Unit/Integration Testing, CI/CD, Message Brokers
+
 projects:
 - name: Gizo
   bio: Decentralized distributed job queue built using blockchain technology
   description:
     - Utilized - Go, RPC, Python, BoltDB, WebSocket
     - Developed core blockchain system component using the POW consensus algorithm that allows blocks to be securely written/read using transactions stored in the mempool
-    - Integrated caching in the blockchain to decrase load on the blockchain and to improve performance of frequently executed jobs
-    - Developed system component that allows jobs to be executed in a secure fault tolerant manner which supports executing inidividual jobs, job to be executed in parralel, jobs to be chained to each other and jobs that trigger other jobs
+    - Integrated caching in the blockchain to decrease load on the blockchain and to improve performance of frequently executed jobs
+    - Developed system component that allows jobs to be executed in a secure fault tolerant manner which supports executing individual jobs, job to be executed in parallel, jobs to be chained to each other and jobs that trigger other jobs
     - Developed system component in charge of orchestrating jobs to be executed on worker nodes
   url: github.com/Lobarr/gizo
 
@@ -85,7 +85,7 @@ projects:
   bio: Distributed microservices API Gateway
   description:
     - Utilized - Python, Typescript, React, Mobx, Celery, Redis, MongoDB, SocketIO
-    - Developed system component that supports circuit breaking, request caching, rate limiting, request validition and service failure alerts
+    - Developed system component that supports circuit breaking, request caching, rate limiting, request validation and service failure alerts
     - Integrated celery task queue to handle timely tasks reducing overhead and improving system performance
     - Developed dashboard for visualizing insights of running services and hot service management
   url: github.com/Lobarr/raven
