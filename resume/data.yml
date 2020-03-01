@@ -14,7 +14,7 @@ birth:
 
 experience:
 - company: IBM
-  position: Full Stack Developer Intern
+  position: Full Stack Developer (Cloud) Intern
   timeperiod: May 2019 - Aug 2019
   location: Toronto, ON
   description:
@@ -63,7 +63,7 @@ education:
 # skill level goes 0 to 100
 skills:
   - Programming Languages - Go, Python, C++, Java, JavaScript, TypeScript, Bash
-  - Tools/Platforms - Docker, Kubernetes, Helm, Github Action, REST/GRPC/GraphQL, Protobuf/MsgPack/JSON, Bazel, Git, JWT, Websockets
+  - Tools/Platforms - Docker, Kubernetes, Openstack, Helm, Github Action, REST/GRPC/GraphQL, Protobuf/MsgPack/JSON, Bazel, Git, JWT, Websockets
   - Cloud Providers - AWS, Heroku
   - Databases - MongoDB, Redis, SQLite, DynamoDB
   - Frameworks/Libraries - React, MobX/Redux, Vue, Flask, Express, Webpack

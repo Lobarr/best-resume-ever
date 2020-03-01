@@ -189,7 +189,7 @@ export default Vue.component(name, getVueOptions(name));
       // margin-top:5px;
       margin-bottom:20px;
       .summary-description {
-        font-size: 12px;
+        font-size: 10.5px;
       }
     }
     .contact {
@@ -214,7 +214,7 @@ export default Vue.component(name, getVueOptions(name));
       }
       .education-block {
         margin-bottom:10px;
-        font-size:11px;
+        font-size:10.5px;
       }
     }
     .skills-block {
@@ -226,7 +226,7 @@ export default Vue.component(name, getVueOptions(name));
         height: 100%;
         margin-bottom:10px;
         display:inline-block;
-        font-size:11px;
+        font-size:10.5px;
         ul {
           padding: 0;
         }
